@@ -45,18 +45,30 @@
           </nav>
         </div>
         <div class="header-contact">
-          <a class="link contact" href="mailto:info@devstudio.com">info@devstudio.com</a>
-          <a class="link contact" href="tel:+380961111111">+38 096 111 11 11</a>
+          <a class="link contact" href="mailto:info@devstudio.com"
+            ><svg class="contact-icon">
+              <use href="./img/icon/icons.svg#icon-envelope-hover-2"></use>
+            </svg>
+            info@devstudio.com</a
+          >
+          <a class="link contact" href="tel:+380961111111"
+            ><svg class="contact-icon">
+              <use href="./img/icon/icons.svg#icon-smartphone-2"></use>
+            </svg>
+            +38 096 111 11 11</a
+          >
         </div>
       </div>
     </header>
     <main>
       <!--Заказать услугу-->
       <section class="hero">
-        <div class="container">
-          <div class="hero-title-container">
-            <h1 class="hero-title">Эффективные решения для <br />вашего бизнеса</h1>
-            <button type="button" class="hero-button">Заказать услугу</button>
+        <div class="overlay">
+          <div class="container">
+            <div class="hero-title-container">
+              <h1 class="hero-title">Эффективные решения для <br />вашего бизнеса</h1>
+              <button type="button" class="hero-button">Заказать услугу</button>
+            </div>
           </div>
         </div>
       </section>
@@ -65,25 +77,25 @@
         <div class="container">
           <h2 class="visually-hidden">benefits</h2>
           <ul class="benefits-list list card-set">
-            <li class="benefit-item">
+            <li class="benefit-item antenna-icon">
               <h3 class="title">ВНИМАНИЕ К ДЕТАЛЯМ</h3>
               <p class="text">
                 Идейные соображения,а также начало повседневной работы по формированию позиции.
               </p>
             </li>
-            <li class="benefit-item">
+            <li class="benefit-item clock-icon">
               <h3 class="title">ПУНКТУАЛЬНОСТЬ</h3>
               <p class="text">
                 Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
               </p>
             </li>
-            <li class="benefit-item">
+            <li class="benefit-item diogram-icon">
               <h3 class="title">ПЛАНИРОВАНИЕ</h3>
               <p class="text">
                 Равным образом консультация с широким активом в значительной степени обуславливает.
               </p>
             </li>
-            <li class="benefit-item">
+            <li class="benefit-item astronaut-icon">
               <h3 class="title">СОВРЕМЕННЫЕ ТЕХНОЛОГИИ</h3>
               <p class="text">
                 Значимость этих проблем настолько очевидна, что реализация плановых заданий.
@@ -124,6 +136,12 @@
               <div class="padding-team">
                 <h3 class="team title">Игорь Демьяненко</h3>
                 <p class="team text">Product Designer</p>
+                <div class="icon-team">
+                  <div class="icon insta"></div>
+                  <div class="icon twit"></div>
+                  <div class="icon fb"></div>
+                  <div class="icon linkedln"></div>
+                </div>
               </div>
             </li>
             <li class="team-item">
@@ -136,6 +154,12 @@
               <div class="padding-team">
                 <h3 class="team title">Ольга Репина</h3>
                 <p class="team text">Frontend Developer</p>
+                <div class="icon-team">
+                  <div class="icon insta"></div>
+                  <div class="icon twit"></div>
+                  <div class="icon fb"></div>
+                  <div class="icon linkedln"></div>
+                </div>
               </div>
             </li>
             <li class="team-item">
@@ -148,6 +172,12 @@
               <div class="padding-team">
                 <h3 class="team title">Николай Тарасов</h3>
                 <p class="team text">Marketing</p>
+                <div class="icon-team">
+                  <div class="icon insta"></div>
+                  <div class="icon twit"></div>
+                  <div class="icon fb"></div>
+                  <div class="icon linkedln"></div>
+                </div>
               </div>
             </li>
             <li class="team-item">
@@ -160,8 +190,27 @@
               <div class="padding-team">
                 <h3 class="team title">Михаил Ермаков</h3>
                 <p class="team text">UI Designer</p>
+                <div class="icon-team">
+                  <div class="icon insta"></div>
+                  <div class="icon twit"></div>
+                  <div class="icon fb"></div>
+                  <div class="icon linkedln"></div>
+                </div>
               </div>
             </li>
+          </ul>
+        </div>
+      </section>
+      <section class="customers">
+        <div class="container">
+          <h2 class="pretitle">Наши постоянные клиенты</h2>
+          <ul class="icons-customers">
+            <li class="icon customers1"></li>
+            <li class="icon customers2"></li>
+            <li class="icon customers3"></li>
+            <li class="icon customers4"></li>
+            <li class="icon customers5"></li>
+            <li class="icon customers6"></li>
           </ul>
         </div>
       </section>
@@ -193,6 +242,15 @@
             <li><a class="footer-contact link" href="tel:+380961111111">+38 096 111 11 11</a></li>
           </ul>
         </address>
+        <div class="join">
+          <h2 class="join-now">Присоединяйся</h2>
+          <ul class="icon-join">
+            <li class="icon insta"></li>
+            <li class="icon twit"></li>
+            <li class="icon fb"></li>
+            <li class="icon linkedln"></li>
+          </ul>
+        </div>
       </div>
     </footer>
   </body>

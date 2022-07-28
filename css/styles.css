@@ -116,6 +116,7 @@ body {
 .header-link:hover,
 .header-link:focus,
 .contact:hover,
+.contact-icon:hover,
 .contact:focus {
     color: var(--accent-color);
 }
@@ -126,6 +127,7 @@ body {
     font-size: 14px;
     line-height: 1.42;
     letter-spacing: 0.02em;
+    align-items: center;
 }
 
 .contact:not(:last-child) {
@@ -137,6 +139,15 @@ body {
 .contact:hover,
 .contact:focus {
     color: var(--accent-color)
+}
+
+
+
+.contact-icon {
+    width: 16px;
+    height: 12px;
+    fill: currentColor;
+    margin-right: 10px;
 }
 
 /*-------page-heder------*/
@@ -197,8 +208,6 @@ body {
 
 .hero {
     background-color: #2F303A;
-    padding-top: 200px;
-    padding-bottom: 200px;
 }
 
 
@@ -240,6 +249,19 @@ body {
     background-color: #188CE8;
 }
 
+/*---------------overlay--------------*/
+.overlay {
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero/hero.jpg);
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
 
 /*------section------*/
 .section-padding {
@@ -286,6 +308,16 @@ body {
     margin-bottom: var(--title-margin-bottom)
 }
 
+.pretitle {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+}
+
 .benefits-list {
     color: var(--primery-text-color);
 }
@@ -324,8 +356,32 @@ body {
     margin-top: var(--card-item-gap);
 }
 
-.text-centered {
+.benefit-item::before {
+    content: "";
+    display: block;
+    width: 240px;
+    height: 120px;
+    background-position: center;
+    background-color: #F5F4FA;
+    border-radius: 4px;
     text-align: center;
+    background-repeat: no-repeat;
+}
+
+.antenna-icon::before {
+    background-image: url(../img/icon/antenna.svg);
+}
+
+.clock-icon::before {
+    background-image: url(../img/icon/clock.svg);
+}
+
+.astronaut-icon::before {
+    background-image: url(../img/icon/astronaut.svg);
+}
+
+.diogram-icon::before {
+    background-image: url(../img/icon/diagram.svg);
 }
 
 .card-set>.team-item {
@@ -388,6 +444,51 @@ body {
     letter-spacing: 0.03em;
 }
 
+.icon-team>.icon {
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.icon-team {
+    margin-top: 16px;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.icon-team>.icon:not(:first-child) {
+    margin-left: 10px;
+
+}
+
+.insta {
+    background-image: url(../img/icon/instagram.svg);
+
+}
+
+.insta:hover,
+.twit:hover,
+.fb:hover,
+.linkedln:hover {
+    background-color: var(--accent-color);
+    fill: var(--white);
+}
+
+.twit {
+    background-image: url(../img/icon/twitter.svg);
+}
+
+.fb {
+    background-image: url(../img/icon/facebook.svg);
+}
+
+.linkedln {
+    background-image: url(../img/icon/linkedin.svg);
+}
+
 .project-list .title {
     font-weight: 700;
     font-size: 18px;
@@ -400,6 +501,52 @@ body {
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.03em;
+}
+
+
+/*-------------------customers------------*/
+.customers {
+    padding-top: var(--section-padding-gap);
+    padding-bottom: var(--section-padding-gap);
+}
+
+.icons-customers>.icon {
+    display: inline-block;
+    width: 170px;
+    height: 92px;
+    border: 1px solid rgba(175, 177, 184, 1);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.icons-customers>.icon:not(:last-child) {
+    margin-right: 30px;
+}
+
+.customers1 {
+    background-image: url(../img/icon/Logo1.svg);
+}
+
+.customers2 {
+    background-image: url(../img/icon/Logo2.svg);
+}
+
+.customers3 {
+    background-image: url(../img/icon/Logo3.svg);
+}
+
+.customers4 {
+    background-image: url(../img/icon/Logo4.svg);
+    fill: #AFB1B8;
+    color: ;
+}
+
+.customers5 {
+    background-image: url(../img/icon/Logo5.svg);
+}
+
+.customers6 {
+    background-image: url(../img/icon/Logo6.svg);
 }
 
 /*------------------footer--------------*/
@@ -461,6 +608,32 @@ body {
     color: var(--accent-color);
 }
 
+.join-now {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+}
+
+.join {
+    width: 206px;
+    height: 80px;
+    display: block;
+}
+
+.icon-join>.icon {
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: red;
+}
 
 /*----------portfolio-------------*/
 
