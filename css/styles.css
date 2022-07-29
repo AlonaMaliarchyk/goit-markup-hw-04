@@ -366,6 +366,7 @@ body {
     border-radius: 4px;
     text-align: center;
     background-repeat: no-repeat;
+    margin-bottom: 30px;
 }
 
 .antenna-icon::before {
@@ -390,6 +391,7 @@ body {
     margin-top: var(--card-item-gap);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+    background-color: #FFFFFF;
 }
 
 .card-set>.work-item {
@@ -444,13 +446,12 @@ body {
     letter-spacing: 0.03em;
 }
 
-.icon-team>.icon {
+.icon {
     display: inline-block;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    background-position: center;
+    fill: #AFB1B8;
+    ;
     background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .icon-team {
@@ -464,9 +465,22 @@ body {
 
 }
 
-.insta {
-    background-image: url(../img/icon/instagram.svg);
+.icon-in:hover {
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    background-position: center;
+}
 
+.icon-in {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-position: center;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 .insta:hover,
@@ -475,18 +489,6 @@ body {
 .linkedln:hover {
     background-color: var(--accent-color);
     fill: var(--white);
-}
-
-.twit {
-    background-image: url(../img/icon/twitter.svg);
-}
-
-.fb {
-    background-image: url(../img/icon/facebook.svg);
-}
-
-.linkedln {
-    background-image: url(../img/icon/linkedin.svg);
 }
 
 .project-list .title {
@@ -632,7 +634,13 @@ body {
     border-radius: 50%;
     background-position: center;
     background-repeat: no-repeat;
-    background-color: red;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border: inside #000000;
+}
+
+.join-insta {
+    background-image: url(../img/icon/instagram.svg);
+    fill: #EEEEEE;
 }
 
 /*----------portfolio-------------*/
