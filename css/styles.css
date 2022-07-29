@@ -455,6 +455,7 @@ body {
 }
 
 .icon-team {
+    display: flex;
     margin-top: 16px;
     padding-left: 32px;
     padding-right: 32px;
@@ -465,13 +466,13 @@ body {
 
 }
 
-.icon-in:hover {
+.icon-social:hover {
     background-color: var(--accent-color);
     border-radius: 50%;
     background-position: center;
 }
 
-.icon-in {
+.icon-social {
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -486,7 +487,7 @@ body {
 .insta:hover,
 .twit:hover,
 .fb:hover,
-.linkedln:hover {
+.linkedin:hover {
     background-color: var(--accent-color);
     fill: var(--white);
 }
@@ -512,43 +513,36 @@ body {
     padding-bottom: var(--section-padding-gap);
 }
 
-.icons-customers>.icon {
-    display: inline-block;
+.all-customers {
+    display: flex;
+}
+
+.icons-customers {
     width: 170px;
     height: 92px;
     border: 1px solid rgba(175, 177, 184, 1);
     background-position: center;
-    background-repeat: no-repeat;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    display: flex;
+    justify-content: center;
 }
 
-.icons-customers>.icon:not(:last-child) {
+.icons-customers:not(:last-child) {
     margin-right: 30px;
 }
 
-.customers1 {
-    background-image: url(../img/icon/Logo1.svg);
+.cust:hover,
+.cust:focus {
+    width: 106px;
+    height: 60px;
+    fill: var(--accent-color);
+
 }
 
-.customers2 {
-    background-image: url(../img/icon/Logo2.svg);
-}
-
-.customers3 {
-    background-image: url(../img/icon/Logo3.svg);
-}
-
-.customers4 {
-    background-image: url(../img/icon/Logo4.svg);
-    fill: #AFB1B8;
-    color: ;
-}
-
-.customers5 {
-    background-image: url(../img/icon/Logo5.svg);
-}
-
-.customers6 {
-    background-image: url(../img/icon/Logo6.svg);
+.icons-customers:hover {
+    border: 1px solid var(--accent-color);
 }
 
 /*------------------footer--------------*/
