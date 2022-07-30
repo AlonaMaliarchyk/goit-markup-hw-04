@@ -15,6 +15,7 @@
 }
 
 
+
 .visually-hidden {
     position: absolute;
     white-space: nowrap;
@@ -410,7 +411,6 @@ body {
 .page-team {
     background-color: #F5F4FA;
     padding-bottom: 94px;
-
 }
 
 .team,
@@ -445,11 +445,7 @@ body {
 }
 
 .icon {
-    display: inline-block;
     fill: #AFB1B8;
-    ;
-    background-repeat: no-repeat;
-    background-size: contain;
 }
 
 .icon-team {
@@ -459,15 +455,18 @@ body {
     padding-right: 32px;
 }
 
-.icon-team>.icon:not(:first-child) {
+.icon-team>.icon-social:not(:first-child) {
     margin-left: 10px;
-
 }
 
 .icon-social:hover {
     background-color: var(--accent-color);
     border-radius: 50%;
-    background-position: center;
+    fill: #FFFFFF;
+}
+
+.icon-social:hover svg {
+    fill: #FFFFFF;
 }
 
 .icon-social {
@@ -480,14 +479,6 @@ body {
     align-content: center;
     display: flex;
     justify-content: center;
-}
-
-.insta:hover,
-.twit:hover,
-.fb:hover,
-.linkedin:hover {
-    background-color: var(--accent-color);
-    fill: var(--white);
 }
 
 .project-list .title {
@@ -525,18 +516,20 @@ body {
     align-content: center;
     display: flex;
     justify-content: center;
+    border-radius: 4px;
 }
 
 .icons-customers:not(:last-child) {
     margin-right: 30px;
 }
 
-.cust:hover,
-.cust:focus {
-    width: 106px;
-    height: 60px;
-    fill: var(--accent-color);
+.icons-customers>svg {
+    height: 120%;
+}
 
+
+.icons-customers:hover>svg {
+    fill: var(--accent-color);
 }
 
 .icons-customers:hover {
@@ -561,10 +554,9 @@ body {
 
 .footer-padding {
     padding-bottom: 60px;
-
 }
 
-.contact-margin {
+.footer-contact>li:not(:last-child) {
     margin-bottom: 9px;
 }
 
@@ -578,7 +570,6 @@ body {
 
 .footer-address {
     color: #FFFFFF;
-
 }
 
 .footer-address,
@@ -636,7 +627,6 @@ body {
     justify-content: center;
     background: rgba(255, 255, 255, 0.1);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border: inside #000000;
     fill: #FFFFFF;
 }
 
@@ -649,32 +639,9 @@ body {
     border-radius: 50%;
 }
 
-/*-----------------
-.join-insta {
-    background-image: url(../img/icon/instagram.svg);
-    fill: #EEEEEE;}
-
-
-.footer-icon-sotial {
-    background-color: var(--accent-color);
-    fill: #FFFFFF;
-    border-radius: 50%;
-    background-position: center;
-}---------*/
-
 .footer-info-container {
     display: flex;
 }
-
-.insta:hover,
-.twit:hover,
-.fb:hover,
-.linkedin:hover {
-    background-color: var(--accent-color);
-    fill: var(--white);
-}
-
-
 
 /*----------portfolio-------------*/
 
