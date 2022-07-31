@@ -358,7 +358,7 @@ body {
 .benefit-item::before {
     content: "";
     display: block;
-    width: 240px;
+    width: 270px;
     height: 120px;
     background-position: center;
     background-color: #F5F4FA;
@@ -455,23 +455,24 @@ body {
     padding-right: 32px;
 }
 
-.icon-team>.icon-social:not(:first-child) {
+.icon-team>li:not(:first-child) {
     margin-left: 10px;
 }
 
-.icon-social:hover {
+.icon-social:hover,
+.icon-social:focus {
     background-color: var(--accent-color);
     border-radius: 50%;
-    fill: #FFFFFF;
 }
 
-.icon-social:hover svg {
+.icon-social:hover svg,
+.icon-social:focus svg {
     fill: #FFFFFF;
 }
 
 .icon-social {
-    width: 40px;
-    height: 40px;
+    width: 44px;
+    height: 44px;
     border-radius: 50%;
     background-position: center;
     text-align: center;
@@ -495,6 +496,10 @@ body {
     letter-spacing: 0.03em;
 }
 
+.project-list:hover,
+.project-list:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
 
 /*-------------------customers------------*/
 .customers {
@@ -519,16 +524,18 @@ body {
     border-radius: 4px;
 }
 
-.icons-customers:not(:last-child) {
+.all-customers>li:not(:last-child) {
     margin-right: 30px;
 }
 
-.icons-customers:hover>svg {
-    fill: var(--accent-color);
+.icons-customers:hover,
+.icons-customers:focus {
+    border: 1px solid var(--accent-color);
 }
 
-.icons-customers:hover {
-    border: 1px solid var(--accent-color);
+.icons-customers:hover svg,
+.icons-customers:focus svg {
+    fill: var(--accent-color);
 }
 
 /*------------------footer--------------*/
@@ -625,11 +632,12 @@ body {
     fill: #FFFFFF;
 }
 
-.icon-footer:not(:last-child) {
+.icon-join>li:not(:last-child) {
     margin-right: 10px;
 }
 
-.icon-footer:hover {
+.icon-footer:hover,
+.icon-footer:focus {
     background-color: var(--accent-color);
     border-radius: 50%;
 }
