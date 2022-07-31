@@ -523,11 +523,6 @@ body {
     margin-right: 30px;
 }
 
-.icons-customers>svg {
-    height: 120%;
-}
-
-
 .icons-customers:hover>svg {
     fill: var(--accent-color);
 }
